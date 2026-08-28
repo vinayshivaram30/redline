@@ -1,0 +1,72 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/install-state.gz
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Production build
+/build
+/dist
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.keystore
+*.jks
+id_rsa*
+id_ed25519*
+*.env
+secrets.*
+credentials.*
+service-account*.json
+gha-creds-*.json
+.npmrc
+.netrc
+.pypirc
+.aws/
+.gcloud/
+.ssh/
+
+# Tooling caches
+.vercel
+.turbo
+.eslintcache
+*.tsbuildinfo
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
