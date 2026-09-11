@@ -1,6 +1,30 @@
 # Tasks
-## Phase 1 - Backlog   <!-- intent: get from validated research to a buildable spec -->
-- [x] T1: validate the competitive edge (counter-offer drafting + grounded Q&A) - see research/agent5-edge-validation.md: no competitor confirmed to combine both, edge holds
-- [x] T2: write PRD.md from research/summary.md + agent5-edge-validation.md + CLAUDE.md scope
-- [x] T3: spec-driven-development pass on PRD -> docs/SPEC.md (draft - 4 open questions block Phase 2)
-- [ ] T4: resolve docs/SPEC.md open questions, then planning-and-task-breakdown -> replace this backlog with real build phases
+
+Full detail (acceptance criteria, verify steps, files, risks): tasks/plan.md. This file drives the dashboard.
+
+## Phase 1 - Foundation   <!-- intent: scaffold, auth, schema, upload+parse for freelance contracts -->
+- [ ] T1: Scaffold Next.js app + Supabase project wiring
+- [ ] T2: Auth (Supabase email/password)
+- [ ] T3: Document + document_text schema (migration)
+- [ ] T4: Client-side upload + parse (PDF/DOCX -> text), freelance contracts
+
+## Phase 2 - Core analysis   <!-- intent: the trust feature - summary + cited flagged clauses -->
+- [ ] T5: Citation-integrity check
+- [ ] T6: Analysis API route - summary + ranked flagged clauses
+- [ ] T7: Document detail UI - summary + flags + source highlight
+
+## Phase 3 - Counter-offer drafting   <!-- intent: drafted replacement language per flag -->
+- [ ] T8: Extend analysis to draft counter-offer per flag
+- [ ] T9: Render counter-offer in UI
+
+## Phase 4 - Red lines   <!-- intent: user's own rules drive the analysis -->
+- [ ] T10: Red-line list schema + CRUD
+- [ ] T11: Feed red lines into analysis, matchedRedLine
+
+## Phase 5 - Grounded Q&A   <!-- intent: answers only from the document, adversarial-tested -->
+- [ ] T12: Q&A API route, strictly grounded (adversarial test set required)
+- [ ] T13: Q&A box UI
+
+## Phase 6 - Library + second document type   <!-- intent: saved library, extend to leases -->
+- [ ] T14: Document library - list + revisit
+- [ ] T15: Extend to leases (second document type)

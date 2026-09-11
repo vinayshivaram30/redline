@@ -14,6 +14,8 @@
 | strategy | - | - | missing |
 | PRD | PRD.md | create-prd | 2026-09-11 | current |
 | spec | docs/SPEC.md | spec-driven-development | 2026-09-11 | current |
+| implementation plan | tasks/plan.md | planning-and-task-breakdown | 2026-09-11 | current |
+| task list | TASKS.md / tasks/todo.md | planning-and-task-breakdown | 2026-09-11 | current |
 
 status: current | stale (superseded by a later ask) | draft
 
@@ -26,3 +28,4 @@ status: current | stale (superseded by a later ask) | draft
 | 2026-09-11 | write PRD | create-prd | PRD.md - 8-section PRD from research/summary.md + agent5-edge-validation.md + CLAUDE.md scope; flags market-segment choice and "does the counter-offer land" as unvalidated assumptions |
 | 2026-09-11 | spec pass on PRD | spec-driven-development (Phase 1: Specify) | docs/SPEC.md - draft, 4 open questions need human review before Phase 2 (Plan): first document type, test framework, auth method, doc size limit/parser choice |
 | 2026-09-11 | resolve spec open questions | Vinay confirmed defaults | freelance contracts + leases locked; Vitest+Playwright, Supabase email/password, 50pg/25k word cap, pdfjs-dist+mammoth confirmed; docs/SPEC.md -> current |
+| 2026-09-11 | plan + task breakdown | planning-and-task-breakdown | tasks/plan.md (15 tasks, 6 phases, 4 checkpoints) + TASKS.md/tasks/todo.md; highest-risk work (citation integrity) sequenced first to fail fast |
