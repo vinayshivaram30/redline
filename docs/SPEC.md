@@ -19,9 +19,11 @@ Settled in CLAUDE.md (not re-litigated here):
 - Tailwind for styling
 - Approved deps: next, react, typescript, tailwind, `@supabase/supabase-js`, one browser-side PDF/DOCX parser (pick one: `pdfjs-dist` for PDF + `mammoth` for DOCX, or equivalent — confirm before adding)
 
-Not yet decided, proposed here:
-- Test framework: Vitest (unit) + Playwright (e2e) — standard for this stack, no existing precedent in repo to contradict it
-- Auth method: Supabase Auth, email/password (magic link acceptable alternative) — CLAUDE.md says "Supabase for auth" but not which method
+Decided (2026-09-11, confirmed by Vinay):
+- Test framework: Vitest (unit) + Playwright (e2e)
+- Auth method: Supabase Auth, email/password
+- Document size limit: 50 pages / ~25k words
+- Parser libraries: `pdfjs-dist` for PDF, `mammoth` for DOCX (both client-side)
 
 ## Commands
 
@@ -94,7 +96,6 @@ Naming: camelCase for variables/functions, PascalCase for components/types, file
 
 ## Open Questions
 
-- Which document type(s) ship first: PRD.md says "likely" freelance contracts and leases but doesn't lock it. Needs a decision before Phase 2 (Plan) can sequence work concretely.
-- Test framework and auth method proposed above (Vitest/Playwright, Supabase email/password) — not in CLAUDE.md, need explicit confirmation or override.
-- Document size limit for parsing/LLM context — no number set yet; proposing 50 pages / ~25k words as a starting cap, open to change.
-- Which PDF/DOCX parser library to standardize on — CLAUDE.md allows "one browser-side PDF/DOCX text parser" but doesn't name it.
+None outstanding. Resolved 2026-09-11:
+- First document types: freelance contracts + leases, locked.
+- Test framework, auth method, doc size limit, parser libraries: see Tech Stack section, all confirmed.

@@ -13,7 +13,7 @@
 | edge validation (counter-offer + grounded Q&A vs competitors) | research/agent5-edge-validation.md | research agent (Sonnet) | 2026-09-11 | current |
 | strategy | - | - | missing |
 | PRD | PRD.md | create-prd | 2026-09-11 | current |
-| spec | docs/SPEC.md | spec-driven-development | 2026-09-11 | draft |
+| spec | docs/SPEC.md | spec-driven-development | 2026-09-11 | current |
 
 status: current | stale (superseded by a later ask) | draft
 
@@ -25,3 +25,4 @@ status: current | stale (superseded by a later ask) | draft
 | 2026-09-11 | validate counter-offer + grounded Q&A edge vs competitors | 1 research agent | no product checked (9 checked) confirmed to combine both; combo not found anywhere among consumer-tier competitors - edge holds, proceed to PRD |
 | 2026-09-11 | write PRD | create-prd | PRD.md - 8-section PRD from research/summary.md + agent5-edge-validation.md + CLAUDE.md scope; flags market-segment choice and "does the counter-offer land" as unvalidated assumptions |
 | 2026-09-11 | spec pass on PRD | spec-driven-development (Phase 1: Specify) | docs/SPEC.md - draft, 4 open questions need human review before Phase 2 (Plan): first document type, test framework, auth method, doc size limit/parser choice |
+| 2026-09-11 | resolve spec open questions | Vinay confirmed defaults | freelance contracts + leases locked; Vitest+Playwright, Supabase email/password, 50pg/25k word cap, pdfjs-dist+mammoth confirmed; docs/SPEC.md -> current |

@@ -35,7 +35,7 @@ Defined by the situation people are in, not demographics:
 - **Renters about to sign a lease** — real spend ($450 avg for lawyer review) but a cheap substitute already exists (free 30-min landlord-tenant attorney consultations, plus free tools like Justee/SaferLease/LeaseCheck already flagging risky lease clauses). Constraint: Redline has to win on the counter-offer and Q&A layer here, not base flagging, which is already free elsewhere.
 - **Small business owners signing vendor/SaaS/service contracts** — 51% skip legal review over cost; 47% have lost $500+ from problems review would likely have caught. Constraint: this segment's contracts are more varied (indemnity, liability caps, fee escalators) than the other two, harder to scope tightly for a first version.
 
-First version targets whichever of these is easiest to validate the core trust hypothesis with — likely freelancers and renters, since both have sourced pain and sourced pricing, and their contracts are shorter and more standardized than small-business vendor agreements.
+First version targets freelancers and renters (locked 2026-09-11): both have sourced pain and sourced pricing, and their contracts are shorter and more standardized than small-business vendor agreements.
 
 ## 6. Value Proposition(s)
 
@@ -86,6 +86,6 @@ Settled in CLAUDE.md, not re-litigated here:
 
 ## 8. Release
 
-First version: the six features in 7.2, for one or two document types (likely freelance contracts and leases, per Market Segments), built to prove the trust hypothesis in Objective — not to acquire users or generate revenue (payments explicitly excluded). Rough shape: define/spec pass, then incremental build with the standing citation rule enforced from the first flag shipped, not added later.
+First version: the six features in 7.2, for freelance contracts and leases (locked, per Market Segments), built to prove the trust hypothesis in Objective — not to acquire users or generate revenue (payments explicitly excluded). Rough shape: define/spec pass, then incremental build with the standing citation rule enforced from the first flag shipped, not added later.
 
 Future versions, not this one: payments/billing, OCR for scanned documents, sharing documents between users, additional document types beyond the first one or two, broader legal-advice framing (would need to clear the same trust bar DoNotPay failed on).
