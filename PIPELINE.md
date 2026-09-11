@@ -4,6 +4,7 @@
 - name: Redline
 - created: 2026-08-28
 - idea: reads a contract, lease, freelance agreement or ToS and tells the reader what they're actually signing - plain-English summary, risky clauses ranked by severity with exact source sentence, a drafted counter-offer per clause, and a question box that answers only from the document.
+- Supabase project: `redline` (ref `aahentkawcejrvngvhve`, org `unbebhtffhswmvfsjnzn`, ap-south-1, free tier); URL/anon key in `.env.local` (gitignored, not in repo)
 
 ## Artifacts
 | artifact | path | produced by | date | status |
@@ -29,3 +30,5 @@ status: current | stale (superseded by a later ask) | draft
 | 2026-09-11 | spec pass on PRD | spec-driven-development (Phase 1: Specify) | docs/SPEC.md - draft, 4 open questions need human review before Phase 2 (Plan): first document type, test framework, auth method, doc size limit/parser choice |
 | 2026-09-11 | resolve spec open questions | Vinay confirmed defaults | freelance contracts + leases locked; Vitest+Playwright, Supabase email/password, 50pg/25k word cap, pdfjs-dist+mammoth confirmed; docs/SPEC.md -> current |
 | 2026-09-11 | plan + task breakdown | planning-and-task-breakdown | tasks/plan.md (15 tasks, 6 phases, 4 checkpoints) + TASKS.md/tasks/todo.md; highest-risk work (citation integrity) sequenced first to fail fast |
+| 2026-09-11 | build Task 1: scaffold | incremental-implementation | Next.js/TS/Tailwind scaffold + Supabase client; build+lint clean; ponytail-review: no findings |
+| 2026-09-11 | build Task 2: auth | incremental-implementation | Supabase email/password auth, protected /documents route, created Supabase project `redline`; e2e (Playwright) 3/3 passing; ponytail-review found 2 (unused getSession wrapper, premature Vitest install) - both fixed before commit |

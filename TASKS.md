@@ -4,7 +4,7 @@ Full detail (acceptance criteria, verify steps, files, risks): tasks/plan.md. Th
 
 ## Phase 1 - Foundation   <!-- intent: scaffold, auth, schema, upload+parse for freelance contracts -->
 - [x] T1: Scaffold Next.js app + Supabase project wiring
-- [ ] T2: Auth (Supabase email/password)
+- [x] T2: Auth (Supabase email/password)
 - [ ] T3: Document + document_text schema (migration)
 - [ ] T4: Client-side upload + parse (PDF/DOCX -> text), freelance contracts
 
