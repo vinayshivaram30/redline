@@ -52,8 +52,9 @@ misread.
 - Keep credentials in `.env.local`, which is gitignored. Never commit a secret,
   because a key is public the moment it is pushed and has to be rotated.
 - Approved dependencies: next, react, typescript, tailwind,
-  `@supabase/supabase-js`, and one browser-side PDF/DOCX text parser. Ask
-  before adding any other dependency.
+  `@supabase/supabase-js`, `pdfjs-dist` (PDF text extraction) and `mammoth`
+  (DOCX text extraction) - both client-side, both confirmed in docs/SPEC.md.
+  Ask before adding any other dependency.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

@@ -5,6 +5,7 @@
 - created: 2026-08-28
 - idea: reads a contract, lease, freelance agreement or ToS and tells the reader what they're actually signing - plain-English summary, risky clauses ranked by severity with exact source sentence, a drafted counter-offer per clause, and a question box that answers only from the document.
 - Supabase project: `redline` (ref `aahentkawcejrvngvhve`, org `unbebhtffhswmvfsjnzn`, ap-south-1, free tier); URL/anon key in `.env.local` (gitignored, not in repo)
+- e2e fixture user (pre-confirmed, used by e2e/auth.spec.ts + e2e/upload.spec.ts): `redline-e2e-probe-1@gmail.com` / `testpassword123` - don't delete this user or its auth confirmation
 
 ## Artifacts
 | artifact | path | produced by | date | status |
@@ -33,3 +34,4 @@ status: current | stale (superseded by a later ask) | draft
 | 2026-09-11 | build Task 1: scaffold | incremental-implementation | Next.js/TS/Tailwind scaffold + Supabase client; build+lint clean; ponytail-review: no findings |
 | 2026-09-11 | build Task 2: auth | incremental-implementation | Supabase email/password auth, protected /documents route, created Supabase project `redline`; e2e (Playwright) 3/3 passing; ponytail-review found 2 (unused getSession wrapper, premature Vitest install) - both fixed before commit |
 | 2026-09-11 | build Task 3: documents schema | incremental-implementation | supabase/migrations/0001_documents.sql applied to dev project; RLS verified live (owner-only insert/read via REST API, default auth.uid() catches a client that omits user_id, anon sees nothing); ponytail-review: no findings |
+| 2026-09-11 | build Task 4: upload + parse (PDF/DOCX) | incremental-implementation | lib/parsing/{pdf,docx,limits}.ts, /documents/upload; 6 unit tests (real PDF/DOCX fixtures via macOS textutil/cupsfilter) + e2e upload test, all passing; verified a real upload lands in the DB with correct text/doc_type/RLS ownership; CLAUDE.md's approved-deps line updated to name pdfjs-dist+mammoth explicitly (was ambiguous "one parser"); ponytail-review: no findings. Foundation checkpoint (Phase 1) complete |

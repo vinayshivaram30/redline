@@ -6,7 +6,7 @@ Full detail (acceptance criteria, verify steps, files, risks): tasks/plan.md. Th
 - [x] T1: Scaffold Next.js app + Supabase project wiring
 - [x] T2: Auth (Supabase email/password)
 - [x] T3: Document + document_text schema (migration)
-- [ ] T4: Client-side upload + parse (PDF/DOCX -> text), freelance contracts
+- [x] T4: Client-side upload + parse (PDF/DOCX -> text), freelance contracts
 
 ## Phase 2 - Core analysis   <!-- intent: the trust feature - summary + cited flagged clauses -->
 - [ ] T5: Citation-integrity check
